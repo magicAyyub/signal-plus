@@ -9,7 +9,7 @@ inspired by [Nick Nochnack](https://github.com/nicknochnack)
 **Note:** The pretrained model is automatically downloaded from Hugging Face Hub on first run and cached locally.
 
 # Running
-To run in real time, update the checkpoint parameter in `realtime.py` then run `uv run src/realtime.py`</br> </br> 
+To run in real time, run `uv run src/realtime.py`</br>
 
 <strong>N.B.</strong> you might need need to update your camera parameter in cv2.VideoCapture() to get the right webcam for your machine.
 
