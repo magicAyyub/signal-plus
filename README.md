@@ -9,7 +9,8 @@ inspired by [Nick Nochnack](https://github.com/nicknochnack)
 **Note:** The pretrained model is automatically downloaded from Hugging Face Hub on first run and cached locally.
 
 # Running
-1. To run in real time, update the checkpoint parameter in `realtime.py` then run `uv run src/realtime.py`</br> 
+To run in real time, update the checkpoint parameter in `realtime.py` then run `uv run src/realtime.py`</br> </br> 
+
 <strong>N.B.</strong> you might need need to update your camera parameter in cv2.VideoCapture() to get the right webcam for your machine.
 
 # Using Your Own Pretrained Model
@@ -18,7 +19,7 @@ To train and share your own model with the team:
 
 1. **Upload your model to Hugging Face Hub:**
 ```bash
-python scripts/push_to_hf.py --repo-id YOUR_USERNAME/signdetr-pretrained
+uv run scripts/push_to_hf.py --repo-id YOUR_USERNAME/signdetr-pretrained
 ```
 
 2. **Update the model path in `src/train.py` (line 29):**
